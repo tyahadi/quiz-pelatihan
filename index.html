@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizPro — Platform Quiz Pelatihan</title>
+  <meta name="description" content="Platform quiz interaktif untuk pelatihan dan ujian online. Mudah digunakan oleh admin dan peserta." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Pages injected by router -->
+  </div>
+
+  <!-- Toast notifications -->
+  <div id="toast-container"></div>
+
+  <!-- Loading overlay -->
+  <div id="loading-overlay" class="hidden">
+    <div class="loading-spinner">
+      <div class="spinner"></div>
+      <p>Memuat...</p>
+    </div>
+  </div>
+
+  <!-- Modal overlay -->
+  <div id="modal-overlay" class="hidden">
+    <div id="modal-container"></div>
+  </div>
+
+  <script src="storage.js?v=3"></script>
+  <script src="quiz-engine.js?v=3"></script>
+  <script src="admin.js?v=4"></script>
+  <script src="app.js?v=4"></script>
+</body>
+</html>
